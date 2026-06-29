@@ -12,83 +12,136 @@
     <nav>
         <h2>Caitlin Alexander</h2>
         <div>
-            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-text">
-            <p class="tag">Software Engineering Student</p>
-            <h1>Hi, I'm Caitlin.</h1>
-            <p>
-                I build full-stack applications, work with APIs and databases,
-                and enjoy turning messy problems into useful software.
-            </p>
-            <div class="buttons">
-                <a href="#projects">View Projects</a>
-                <a href="https://github.com/caityalexander" target="_blank">GitHub</a>
-            </div>
-        </div>
-
-        <img src="images/profile.jpeg" alt="Photo of Caitlin Alexander" />
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a third-year Software Engineering student at the University of Canterbury.
-            I'm interested in full-stack development, APIs, databases, data processing,
-            and building software that is practical and easy to use.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project-grid">
-            <div class="card">
-                <h3>Outstanding</h3>
-                <p>A full-stack productivity app with task lists, calendar views, board views, drag-and-drop sorting,
-                    and profile features.</p>
-                <span>React · TypeScript · .NET · SQL</span>
-            </div>
-
-            <div class="card">
-                <h3>Goodreads Recommender</h3>
-                <p>A data project using Goodreads ratings to explore collaborative filtering and book recommendations.
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Software Engineering Student</p>
+                <h1>Hi, I'm Caitlin.</h1>
+                <p>
+                    I enjoy building full-stack applications, designing clean user experiences,
+                    and solving real-world problems through thoughtful software.
                 </p>
-                <span>Python · Dask · pandas · Dataproc</span>
+
+                <div class="buttons">
+                    <a href="#projects">View Projects</a>
+                    <a href="https://github.com/caityalexander" target="_blank">GitHub</a>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>SENG365 REST API</h3>
-                <p>A web development project focused on REST endpoints, routing, MySQL queries, and frontend API
-                    integration.</p>
-                <span>Express · TypeScript · MySQL · React</span>
+            <img src="images/profile.jpeg" alt="Photo of Caitlin Alexander" />
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Featured Projects</h2>
             </div>
 
-            <div class="card">
-                <h3>PickUpYourSheet</h3>
-                <p>A team product design and backlog project focused on task sharing, invitations, gamification, and
-                    user stories.</p>
-                <span>Agile · Scrum · Product Design</span>
-            </div>
-        </div>
-    </section>
+            <article class="project">
+                <div class="project-images image-track">
+                    <img src="images/outstanding_homepage.jpg" alt="Outstanding homepage screenshot">
+                    <img src="images/calendar.jpg" alt="Outstanding calendar view screenshot">
+                    <img src="images/board_view.jpg" alt="Outstanding board view screenshot">
+                </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>I'm always happy to connect about software, projects, or graduate opportunities.</p>
-        <div class="contact-links">
-            <a href="https://github.com/caityalexander" target="_blank">GitHub</a>
-            <a href="mailto:caitlinariaalexander@gmail.com">Email</a>
-            <a href="#" target="_blank">LinkedIn</a>
-        </div>
-    </section>
+                <div class="project-info">
+                    <h3>Outstanding</h3>
+                    <p>
+                        A full-stack productivity app with task lists, calendar and board views,
+                        drag-and-drop sorting, profile features, and task management tools.
+                    </p>
 
-    <script src="script.js"></script>
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                    <div class="links">
+                        <a href="https://csse-seng302-team200.canterbury.ac.nz/prod/" target="_blank">View Deployed
+                            Application</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project reverse">
+                <div class="project-images image-track">
+                    <img src="images/wanderlog-home.jpg" alt="Wanderlog project screenshot">
+                    <img src="images/blog-page.jpg" alt="Wanderlog single blog page">
+                    <img src="images/my-blogs.jpg" alt="Wanderlog itinerary page">
+                </div>
+
+                <div class="project-info">
+                    <h3>Wanderlog</h3>
+                    <p>
+                        A travel planning project focused on organising trip information,
+                        destinations, and itinerary details in a clear, user-friendly interface.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://github.com/caityalexander/wanderlog-frontend" target="_blank">View Frontend
+                            Repository</a>
+                        <a href="https://github.com/caityalexander/wanderlog-backend" target="_blank">View Backend
+                            Repository</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-images image-track">
+                    <img src="images/recommended.jpg"
+                        alt=" Graph of Top Recommended Books and their Weighted Recommendation Score">
+                    <img src="images/single.jpg" alt="Graph of Single Processor Scalability">
+                    <img src="images/weak.jpg" alt="Weak Scalability with Google Cloud">
+                </div>
+
+                <div class="project-info">
+                    <h3>Goodreads Recommender</h3>
+                    <p>
+                        A data project exploring collaborative filtering for book recommendations
+                        using Goodreads ratings data and scalable processing tools.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Dask</span>
+                        <span>pandas</span>
+                        <span>Dataproc</span>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://colab.research.google.com/drive/16MgoySAQRTvxP8ayJIsa13idOG5rkTks?usp=sharing"
+                            target="_blank">Full Notebook</a>
+                    </div>
+                </div>
+            </article>
+
+            < </section>
+
+                <section id="contact" class="contact">
+                    <p class="eyebrow">Get In Touch</p>
+                    <h2>Contact</h2>
+                    <p>I'm always happy to connect about software, projects, or internship opportunities.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:caitlinariaalexander@gmail.com">Email</a>
+                        <a href="https://linkedin.com/in/caitlin-alexander12" target="_blank">LinkedIn</a>
+                    </div>
+                </section>
+    </main>
 </body>
 
 </html>
